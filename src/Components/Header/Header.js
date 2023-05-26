@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Input } from 'antd';
-import logo from '../../images/logoheaderfooter.png'
+import logo from '../../images/logo.png'
 
 import {
     FaDatabase,
