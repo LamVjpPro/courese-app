@@ -4,14 +4,14 @@ import logo from '../../images/logo.png'
 export default function Footer() {
     return (
         <div>
-            <footer className="relative bg-blueGray-200 pt-8 pb-6">
+            <footer className="relative bg-blue-50 pt-8 pb-6">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap text-left lg:text-left">
                         <div className="w-full lg:w-6/12 px-4">
                             <img src={logo} width="250" alt="" />
                             <div className="mt-6 lg:mb-0 mb-6">
                                 <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                                    <i className="fab fa-twitter" /></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                                    <i className="" /></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                                     <i className="fab fa-facebook-square" /></button><button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                                     <i className="fab fa-dribbble" /></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                                     <i className="fab fa-github" href="https://github.com/vanlam2001/elearning_nhom4" />
