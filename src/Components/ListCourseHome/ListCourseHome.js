@@ -5,6 +5,7 @@ import { setListCourse } from '../../Toolkits/courseSlice';
 import { setSpinnerOff, setSpinnerOn } from '../../Toolkits/spinnerSlice';
 import FrontEndCourse from '../FrontEndCourse/FrontEndCourse';
 import PopularCourse from '../PopularCourse/PopularCourse';
+import BackEndCourse from '../BackEndCourse/BackEndCourse'
 
 export default function ListCourseHome() {
   let dispatch = useDispatch();
@@ -26,6 +27,7 @@ export default function ListCourseHome() {
       <div className="myContainer">
         <PopularCourse />
         <FrontEndCourse/>
+        <BackEndCourse/>
       </div>
     </div>
   )

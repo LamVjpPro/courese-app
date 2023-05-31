@@ -23,9 +23,48 @@ import {
 } from "@heroicons/react/20/solid";
 import HeaderUserinfo from "./HeaderUserinfo";
 import { NavLink } from "react-router-dom";
+import { courseService } from '../../services/couserService'
 import { useNavigate } from "react-router-dom";
 import './header.css'
 const { Search } = Input;
+const products = [
+    {
+        name: "Lập trình BackEnd",
+        description: "Bootcamp - Lập trình BackEnd từ Zero đến có việc",
+        href: '#',
+        icon: FaDatabase,
+    },
+    {
+        name: "Thiết kế web",
+        description: "Bootcamp - Từ Zero đến có việc",
+        href: "#",
+        icon: CursorArrowRaysIcon,
+    },
+    {
+        name: "Lập trình di động ",
+        description: "Bootcamp - Lập trình di động từ Zero đến có việc",
+        href: "#",
+        icon: FaTabletAlt,
+    },
+    {
+        name: "Lập trình Front End",
+        description: "Bootcamp - Lập trình Front End từ Zero đến có việc",
+        href: '/frontend',
+        icon: FaCode,
+    },
+    {
+        name: "Lập trình Full Stack",
+        description: "Bootcamp - Lập trình Full Stack từ Zero đến có việc",
+        href: "#",
+        icon: FaLaptopCode,
+    },
+    {
+        name: "Tư duy lập trình",
+        description: "Bootcamp - Tư duy lập trình từ Zero đến có việc",
+        href: "#",
+        icon: FaUserNinja,
+    },
+];
 
 const callsToAction = [
     { name: "Watch demo", href: "#", icon: PlayCircleIcon },
@@ -40,6 +79,21 @@ function Header() {
     const navigate = useNavigate()
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [listCategoryCourse, setListCategoryCourse] = useState([])
+
+    useEffect(() => {
+        courseService.getCourseMenu()
+            .then((res) => {
+                let listObj = []
+                for (let i = 0; i < res.data.length; i++) {
+                    let newObj = { ...res.data[i], ...products[i] }
+                    listObj.push(newObj)
+                }
+                setListCategoryCourse(listObj);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }, [])
     
 
     const onSearch = (value) => {
