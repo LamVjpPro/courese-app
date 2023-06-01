@@ -5,6 +5,7 @@ import BlogPage from "../Components/BlogPage/BlogPage";
 import Info from '../Components/Info/Info'
 import DetailPage from '../Pages/DetailPage/DetailPage'
 import CategoryCoursePage from '../Pages/CategoryCoursePage/CategoryCoursePage'
+import NotFoundPage from '../Pages/NotFoundPage/NotFoundPage'
 
 export const userRoute = [
     {
@@ -30,6 +31,10 @@ export const userRoute = [
     {
         path: '/categorycourse/:id',
         component: <Layout Component={CategoryCoursePage}></Layout>
+    },
+    {
+        path: '*',
+        component: <Layout Component={NotFoundPage}></Layout>
     },
 
 
