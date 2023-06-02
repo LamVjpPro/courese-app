@@ -5,7 +5,7 @@ import BlogPage from "../Components/BlogPage/BlogPage";
 import Info from '../Components/Info/Info'
 import DetailPage from '../Pages/DetailPage/DetailPage'
 import CategoryCoursePage from '../Pages/CategoryCoursePage/CategoryCoursePage'
-import NotFoundPage from '../Pages/NotFoundPage/NotFoundPage'
+import NotFoundPagee from '../Pages/NotFoundPage/NotFoundPage'
 import LoginPage from '../Pages/LoginPage/LoginPage'
 import RegisterPage from '../Pages/RegisterPage/RegisterPage'
 
@@ -36,7 +36,7 @@ export const userRoute = [
     },
     {
         path: '*',
-        component: <Layout Component={NotFoundPage}></Layout>
+        component: <Layout Component={NotFoundPagee}></Layout>
     },
     {
         path: '/login',
