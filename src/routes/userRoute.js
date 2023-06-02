@@ -6,6 +6,8 @@ import Info from '../Components/Info/Info'
 import DetailPage from '../Pages/DetailPage/DetailPage'
 import CategoryCoursePage from '../Pages/CategoryCoursePage/CategoryCoursePage'
 import NotFoundPage from '../Pages/NotFoundPage/NotFoundPage'
+import LoginPage from '../Pages/LoginPage/LoginPage'
+import RegisterPage from '../Pages/RegisterPage/RegisterPage'
 
 export const userRoute = [
     {
@@ -35,6 +37,15 @@ export const userRoute = [
     {
         path: '*',
         component: <Layout Component={NotFoundPage}></Layout>
+    },
+    {
+        path: '/login',
+        component: <Layout Component={LoginPage}></Layout>
+    },
+
+    {
+        path: '/register',
+        component: <Layout Component={RegisterPage}></Layout>
     },
 
 
