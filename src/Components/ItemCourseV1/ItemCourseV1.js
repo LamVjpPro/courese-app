@@ -11,7 +11,7 @@ export default function ItemCourseV1({ item }) {
           <span>{item.danhMucKhoaHoc.tenDanhMucKhoaHoc}</span>
         </div>
         <div className={styles.body}>
-          <h3>{item.moTa}</h3>
+          <h3 className='w-[237.5px] h-[48px]'>{item.moTa}</h3>
           <div className={styles.titleMaker}>
             <div className={styles.imageMaker}>
               <img src="https://demo2.cybersoft.edu.vn/static/media/avatar2.bb9626e2.png" alt="" />
