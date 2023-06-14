@@ -57,7 +57,7 @@ export default function Instrutor() {
         },
         {
             image: instrutor7,
-            name: 'MaiChi-LT',
+            name: 'DiệuLinh-LT',
             reviewRole: 'Chuyên gia lĩnh vực Front End',
             reviewMentor: 4.9,
             reviews: 100
