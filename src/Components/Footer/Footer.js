@@ -24,16 +24,16 @@ export default function Footer() {
                                     <span className="block uppercase text-blue-50 text-sm font-semibold mb-2">Liên kết</span>
                                     <ul className="list-unstyled">
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Trang chủ</a>
+                                            <a href='/' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Trang chủ</a>
                                         </li>
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Dịch vụ</a>
+                                            <a href='' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Dịch vụ</a>
                                         </li>
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Nhóm</a>
+                                            <a href='' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Nhóm</a>
                                         </li>
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Blog</a>
+                                            <a href='/blog' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Blog</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -41,16 +41,16 @@ export default function Footer() {
                                     <span className="block uppercase text-blue-50 text-sm font-semibold mb-2">Khóa học</span>
                                     <ul className="list-unstyled">
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Front End</a>
+                                            <a href='/categorycourse/FrontEnd' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Front End</a>
                                         </li>
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Back End</a>
+                                            <a href='/categorycourse/BackEnd' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Back End</a>
                                         </li>
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Full Stack</a>
+                                            <a href='/categorycourse/FullStack' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Full Stack</a>
                                         </li>
                                         <li>
-                                            <a className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Node js</a>
+                                            <a href='' className="text-blueGray-600 hover:text-pink-800 font-semibold block pb-2 text-sm">Node js</a>
                                         </li>
                                     </ul>
                                 </div>
